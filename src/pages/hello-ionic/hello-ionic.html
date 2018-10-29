@@ -1,9 +1,12 @@
-<ion-header>
-  <ion-navbar>
+
+
+<ion-header >
+  <ion-navbar color="secondary"><!--1) agregamos el color -->
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
      <!--AQUI SE ENCUENTRA EL BUSCADOR-->
+     <br><!--2) AGREGUE ESPACIO BR-->
     <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
     <ion-list>
        <ion-item *ngFor="let item of items">
@@ -17,12 +20,12 @@
 </ion-header>
 
 
-<ion-content padding>
+<ion-content padding class="bgimagen">
 
  <div text-center>
   Novedades EVO Internet<br>
 
 </div>
-<ion-img [width]="imgWidth" [height]="imgHeight" src="../src/imgpelicula/twd.jpg"></ion-img>
+
 
 </ion-content>

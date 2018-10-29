@@ -5,6 +5,7 @@ import { Platform, MenuController, Nav } from 'ionic-angular';
 import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
 import { List1Page} from '../pages/list1/list1';
+import { StandarPage} from '../pages/standar/standar';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -31,7 +32,9 @@ export class MyApp {
     // set our app's pages
     this.pages = [
       { title: 'Inicio', component: HelloIonicPage },
-      { title: 'Películas', component: ListPage },
+      { title: 'Videos', component: ListPage },
+      { title: 'Sitio Estandar', component: StandarPage },
+
       { title: 'Series', component: List1Page }
 
     ];

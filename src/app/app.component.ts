@@ -6,7 +6,7 @@ import { HelloIonicPage } from '../pages/hello-ionic/hello-ionic';
 import { ListPage } from '../pages/list/list';
 import { List1Page} from '../pages/list1/list1';
 import { StandarPage} from '../pages/standar/standar';
-
+import { KatyPage} from '../pages/katy/katy';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
@@ -35,7 +35,8 @@ export class MyApp {
       { title: 'Videos', component: ListPage },
       { title: 'Sitio Estandar', component: StandarPage },
 
-      { title: 'Series', component: List1Page }
+      { title: 'Series', component: List1Page },
+      { title: 'Katherine', component: KatyPage }
 
     ];
   }

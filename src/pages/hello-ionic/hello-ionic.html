@@ -2,19 +2,13 @@
 
 <ion-header >
   <ion-navbar color="dark"><!--1) agregamos el color -->
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+   
      <!--AQUI SE ENCUENTRA EL BUSCADOR-->
 
      <br><!--2) AGREGUE ESPACIO BR-->
      <br>
-    <ion-searchbar (ionInput)="getItems($event)"></ion-searchbar>
-    <ion-list>
-       <ion-item *ngFor="let item of items">
-    {{ item }}
-     </ion-item>
-      </ion-list>
+    
+    
 
 
 
@@ -44,34 +38,16 @@
     <div class="card-subtitle">41 Listings</div>
   </ion-card>
 
-  <ion-card>
-    <img src="../assets/imgs/twd.jpg"/>
-    <div class="card-title">Amsterdam</div>
-    <div class="card-subtitle">64 Listings</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="../assets/imgs/twd.jpg"/>
-    <div class="card-title">San Francisco</div>
-    <div class="card-subtitle">72 Listings</div>
-  </ion-card>
-
-  <ion-card>
-    <img src="../assets/imgs/twd.jpg"/>
-    <div class="card-title">Madison</div>
-    <div class="card-subtitle">28 Listings</div>
-  </ion-card>
-
-
-
-
 
 
 
 <!--BUTTON-->
 <button ion-button full color="dark">Mas Videos</button>
 
-
+ <div id="topButtons">
+  <button ion-button (click)="signIn()" item-left>Sign In</button>
+  <button ion-button (click)="register()" item-left>Register</button>
+  </div>
 <!--PIE DE PAGINA-->
 
 

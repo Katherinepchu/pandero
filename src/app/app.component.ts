@@ -7,8 +7,10 @@ import { ListPage } from '../pages/list/list';
 import { List1Page} from '../pages/list1/list1';
 import { StandarPage} from '../pages/standar/standar';
 import { KatyPage} from '../pages/katy/katy';
+
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
+
 
 
 @Component({
@@ -36,7 +38,9 @@ export class MyApp {
       { title: 'Sitio Estandar', component: StandarPage },
 
       { title: 'Series', component: List1Page },
-      { title: 'Katherine', component: KatyPage }
+      { title: 'Katherine', component: KatyPage },
+      { title: 'Salir', component: HelloIonicPage },
+     
 
     ];
   }

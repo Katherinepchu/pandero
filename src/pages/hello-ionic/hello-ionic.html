@@ -52,29 +52,15 @@
 
 <!--PEGAMOS LO QUE FALTA IONLIST-->
 
- <ion-list>
-    <!-- <ion-item  *ngFor='let usuario of usuarios'>
-     <h1> {{usuario.nombre}}</h1> -->
-         
-    <!--  <ion-avatar item-start>
-     <img [src]="usuario.url">
-     </ion-avatar>
- -->
-    <!-- </ion-item> -->
+   <ion-list>
+   
 
     <ion-item  *ngFor='let usuario of usuarios'>
-     <h1> {{usuario.video_id}}-{{usuario.title}}</h1>
-      <h1> {{usuario.description}}</h1>
-
-    <!--  okkkkkkk
-     kk
-
-     {"records":[{"video_id":"121","title":"Megalod\u00f3n","filename":"RfyEmlFZHZIam2P1f4zc","descriptio -->
-         
-    <!--  <ion-avatar item-start>
-     <img [src]="foto.url"> 
-     </ion-avatar> -->
-
+     <h2> {{usuario.video_id}}-{{usuario.title}}</h2>
+     <!-- <h2>{{usuario.filename}}-{{usuario.description}}</h2>
+     <h3>{{usuario.lags}}-{{usuario.category_id}}</h3>
+      <h3>{{usuario.lags}}-{{usuario.duration}}</h3>   --> 
+    
     </ion-item>
    </ion-list>
 

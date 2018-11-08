@@ -15,7 +15,7 @@ import { Proveedor1Provider } from  '../../providers/proveedor1/proveedor1';
 })
 export class HelloIonicPage {
   usuarios
-  fotos
+  
   @ViewChild('username') uname;
   @ViewChild('password') password;
   constructor(public navCtrl: NavController, public alertCtrl: AlertController, public proveedor1:Proveedor1Provider) { 
@@ -24,21 +24,38 @@ export class HelloIonicPage {
 
 
   }
-  inViewDidload(){
-    this.proveedor1.obtenerDatos()
-    .subscribe(
-      (data)=>{this.usuarios=data;},
-         
-
-      (error)=>{console.log(error);})
-    
-  }
+  
   signIn() {
     this.navCtrl.push(LoginPage);
   }
 
   register() {
     this.navCtrl.push(RegisterPage);
+  }
+
+  ionViewDidLoad() {
+    console.log('eeeeeeeeeeeeee')
+   // console.log('yapue hshshsh')
+   // this.proveedor.obtenerDatos()
+   // .subscribe(data=>{
+
+   //     this.usuarios =data;
+   //     console.log('yajsjsjsjjsjsjsjsjjs',data)
+
+   //   },
+   //   (error)=>{console.log(error);}
+   //   )
+   
+   this.proveedor1.obtenerDatos()
+   .subscribe(data=>{
+
+       this.usuarios =data;
+       console.log('kkkkkkkkkkkkkkkkkk',data)
+
+     },
+     (error)=>{console.log(error);}
+     )
+
   }
 
 }

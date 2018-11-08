@@ -50,7 +50,35 @@
   </div>
 <!--PIE DE PAGINA-->
 
+<!--PEGAMOS LO QUE FALTA IONLIST-->
 
+ <ion-list>
+    <!-- <ion-item  *ngFor='let usuario of usuarios'>
+     <h1> {{usuario.nombre}}</h1> -->
+         
+    <!--  <ion-avatar item-start>
+     <img [src]="usuario.url">
+     </ion-avatar>
+ -->
+    <!-- </ion-item> -->
+
+    <ion-item  *ngFor='let usuario of usuarios'>
+     <h1> {{usuario.video_id}}-{{usuario.title}}</h1>
+      <h1> {{usuario.description}}</h1>
+
+    <!--  okkkkkkk
+     kk
+
+     {"records":[{"video_id":"121","title":"Megalod\u00f3n","filename":"RfyEmlFZHZIam2P1f4zc","descriptio -->
+         
+    <!--  <ion-avatar item-start>
+     <img [src]="foto.url"> 
+     </ion-avatar> -->
+
+    </ion-item>
+   </ion-list>
+
+<!--AQUI TERMINA..-->
 <div text-center>Todos los derechos reservados | © 2018 GISS</div>
 
 

@@ -1,0 +1,104 @@
+<ion-header >
+  <ion-navbar color="dark"><!--1) agregamos el color -->
+   
+     <!--AQUI SE ENCUENTRA EL BUSCADOR-->
+
+     <br><!--2) AGREGUE ESPACIO BR-->
+     <br>
+      </ion-navbar>
+</ion-header>
+<ion-content padding class="bg">
+ <div text-center font="arial">Novedades EVO Internet<br></div><br>
+ <div text-center>Videos Adicionados Recientemente</div>
+
+
+  <div>Encuentra lo que buscas
+    <ion-label>Categoría</ion-label>
+  <ion-select [(ngModel)]="gender">
+    <ion-option value="Ciencia Ficción">Ciencia Ficción</ion-option>
+    <ion-option value="Comedia">Comedia</ion-option>
+    <ion-option value="Drama">Drama</ion-option>
+    <ion-option value="Suspenso">Suspenso</ion-option>
+    <ion-option value="Acción">Acción</ion-option>
+    <ion-option value="Aventura">Aventura</ion-option>
+    <ion-option value="Infantil">Infantil</ion-option>
+    <ion-option value="Terror">Terror</ion-option>
+  </ion-select></div>
+
+<!--IMAGENES DE PELICULAS-->
+
+
+<!--IMAGENES DE PELICULAS-->
+
+
+ <!-- <ion-card >
+    <img src="../assets/imgs/CHRISTOPHER_ROBINN.jpg"/>
+    <div class="card-title">São Paulo</div>
+    <div class="card-subtitle">41 Listings</div>
+  </ion-card> -->
+<!--BUTTON-->
+
+
+
+<!--PIE DE PAGINA-->
+
+<!--PEGAMOS LO QUE FALTA IONLIST-->
+
+   
+   
+
+    <ion-item  class="bg"*ngFor='let usuario of usuarios'>
+
+     <h1> {{usuario.title}}</h1>
+
+     <video width="500" controls>
+  <source src="{{usuario.filename}}" type="video/mp4">
+  <source src="mov_bbb.ogg" type="video/ogg">
+  Your browser does not support HTML5 video.
+</video>
+
+<h2>{{usuario.video_id}}</h2><br/>
+<P>{{usuario.description}}</P>
+
+{{usuario.tags}}
+     
+
+<button ion-button full color="dark">Mas Videos</button>
+ <div id="topButtons">
+  <button ion-button (click)="signIn()" item-left>Sign In</button>
+  <button ion-button (click)="register()" item-left>Register</button>
+  </div>
+
+     <video controls>
+  <source src="movie.mp4" type="video/mp4">
+  <source src="movie.ogg" type="video/ogg">
+  Your browser does not support the video tag.
+</video> -->
+     
+    <!--   <h1>ID :{{usuario.id}}</h1>
+      <h1>{{usuario.address.street}}</h1>
+      <h2>NAME: {{ usuario.name }}</h2>
+      <h3>USERNAME :{{ usuario.username }}</h3>
+      <h4>EMAIL :{{ usuario.email}}</h4>
+      <p>{{ usuario.phone}}</p>
+      <p>{{ usuario.website }}</p>
+      <h1>{{usuario.title}}</h1>
+      {{usuario.__proto__.constructor}} -->
+
+      
+
+
+     <!-- <h2>{{usuario.filename}}-{{usuario.description}}</h2>
+     <h3>{{usuario.lags}}-{{usuario.category_id}}</h3>
+      <h3>{{usuario.lags}}-{{usuario.duration}}</h3>   --> 
+    
+    </ion-item>
+   
+
+<!--AQUI TERMINA..-->
+<div text-center>Todos los derechos reservados | © 2018 GISSMOBILE</div>
+
+
+</ion-content>
+
+

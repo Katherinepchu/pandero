@@ -1,79 +1,56 @@
 <ion-header >
   <ion-navbar color="dark"><!--1) agregamos el color -->
    
-     <!--AQUI SE ENCUENTRA EL BUSCADOR-->
-
+     <!--AQUI SE ENCUENTRA EL el menu-->
+      <button ion-button menuToggle>
+        <ion-icon name="menu"></ion-icon>
+      </button>
      <br><!--2) AGREGUE ESPACIO BR-->
      <br>
       </ion-navbar>
 </ion-header>
+
 <ion-content padding class="bg">
- <div text-center font="arial">Novedades EVO Internet<br></div><br>
- <div text-center>Videos Adicionados Recientemente</div>
+ <div text-center>Novedades EVO Internet<br></div><br>
+ 
+ <div text-center class="bg1">Videos Adicionados Recientemente</div><br>
 
+<!--barra de busqueda-->
+<!-- <ion-searchbar  (ionInput)="getItems($event)"></ion-searchbar>
+<ion-list>
+  <ion-item *ngFor="let usuario of usuarios"> -->
+    <!-- {{ usuario.tags }} -->
+  <!-- </ion-item>
 
-  <div>Encuentra lo que buscas
-    <ion-label>Categoría</ion-label>
-  <ion-select [(ngModel)]="gender">
-    <ion-option value="Ciencia Ficción">Ciencia Ficción</ion-option>
-    <ion-option value="Comedia">Comedia</ion-option>
-    <ion-option value="Drama">Drama</ion-option>
-    <ion-option value="Suspenso">Suspenso</ion-option>
-    <ion-option value="Acción">Acción</ion-option>
-    <ion-option value="Aventura">Aventura</ion-option>
-    <ion-option value="Infantil">Infantil</ion-option>
-    <ion-option value="Terror">Terror</ion-option>
-  </ion-select></div>
-
-<!--IMAGENES DE PELICULAS-->
-
-
-<!--IMAGENES DE PELICULAS-->
-
-
- <!-- <ion-card >
-    <img src="../assets/imgs/CHRISTOPHER_ROBINN.jpg"/>
-    <div class="card-title">São Paulo</div>
-    <div class="card-subtitle">41 Listings</div>
-  </ion-card> -->
-<!--BUTTON-->
-
-
-
-<!--PIE DE PAGINA-->
-
-<!--PEGAMOS LO QUE FALTA IONLIST-->
-
-   
-   
-
+</ion-list> -->
+<!--barra de busqueda-->
     <ion-item  class="bg"*ngFor='let usuario of usuarios'>
 
-     <h1> {{usuario.title}}</h1>
+       <h1 class='titulo'> {{usuario.title}}</h1>
 
-     <video width="500" controls>
-  <source src="{{usuario.filename}}" type="video/mp4">
-  <source src="mov_bbb.ogg" type="video/ogg">
-  Your browser does not support HTML5 video.
-</video>
 
-<h2>{{usuario.video_id}}</h2><br/>
-<P>{{usuario.description}}</P>
 
-{{usuario.tags}}
-     
 
-<button ion-button full color="dark">Mas Videos</button>
+    <!--imagen-->   <video width="100%" heigth="100% " controls  poster="http://videos.eventoz.tv/cc-content/uploads/thumbs/{{usuario.filename}}">
+          
+           <!--video--> <source src="http://videos.eventoz.tv/cc-content/uploads/h264/movies/{{usuario.filename}}" type="video/mp4">
+          
+           
+            Your browser does not support HTML5 video.
+          </video>
+
+         
+
+            {{usuario.tags}}
+
+
+<button ion-button full color="dark">MAS VIDEOS</button>
  <div id="topButtons">
   <button ion-button (click)="signIn()" item-left>Sign In</button>
   <button ion-button (click)="register()" item-left>Register</button>
   </div>
 
-     <video controls>
-  <source src="movie.mp4" type="video/mp4">
-  <source src="movie.ogg" type="video/ogg">
-  Your browser does not support the video tag.
-</video> -->
+    
      
     <!--   <h1>ID :{{usuario.id}}</h1>
       <h1>{{usuario.address.street}}</h1>
@@ -96,6 +73,7 @@
    
 
 <!--AQUI TERMINA..-->
+
 <div text-center>Todos los derechos reservados | © 2018 GISSMOBILE</div>
 
 

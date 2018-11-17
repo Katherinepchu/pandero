@@ -30,6 +30,8 @@ import { Proveedor1Provider } from '../../providers/proveedor1/proveedor1';
 
          )
      }
+
+     
    }
 
 

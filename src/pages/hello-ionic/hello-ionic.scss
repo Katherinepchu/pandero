@@ -9,6 +9,9 @@ page-hello-ionic {
 }
 	.bg{
 	background: linear-gradient(to right, #32db64, #222 100%);
+  font-size:20px;
+  font-weight: bold;
+   font-family: sans-serif;
 }
 	//.bgimagen{
 	//background-image:url('../assets/imgs/twd.jpg');
@@ -19,6 +22,11 @@ page-hello-ionic {
 	ion-card {
   position: relative;
     text-align: center;
+  }
+  .bg1{
+  font-size:15px;
+  font-weight: bold;
+
   }
 
   .card-title {
@@ -37,6 +45,17 @@ page-hello-ionic {
     width: 100%;
     color: #fff;
   }
+
+  .titulo{
+ 
+ 
+  font-size:15px;
+   font-family: "Tahoma", "Geneva", sans-serif;
+    font-weight: bold;
+  }
+
+
+
 	}
 
 
